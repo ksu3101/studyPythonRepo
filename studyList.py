@@ -72,4 +72,51 @@ elist = [11, 22, 33, 44]
 print(elist.index(22))
 slist = ['abc', 'kim', 'lee', 'park']
 print(slist.index('abc'))
-print(slist.index('zzzz'))      # 없을 경우
+#print(slist.index('zzzz'))      # 없을 경우
+
+testlist = [1, 2, 3, 4, 5]
+# 원소 삽입
+testlist.insert(0, -1)  # 0번째 인덱스에 `-1`을 삽입
+print(testlist)
+testlist.insert(6, 999) # 6번째 인덱스에 `999`를 삽입
+print(testlist)
+testlist.insert(1000, 0)    # 1000번째 인덱스에 0 을 삽입 -> 마지막에 추가 된다
+print(testlist)
+
+testlist = [1, 2, 3, 1, 4, 5]
+# 원소 제거
+testlist.remove(1)  # `1` 라는 원소들 중 가장 먼저 찾는 원소를 제거
+print(testlist)
+testlist.remove(4)  # `4`라는 원소를 찾아서 제거
+print(testlist)
+# 찾아서 제거할 원소가 없을 경우 오류가 발생 한다.
+
+testlist = [1, 2, 3, 4, 5]
+# 마지막 원소 얻고 제거
+testlist.pop()
+print(testlist)
+element = testlist.pop()
+print(testlist)
+print(element)
+
+testlist = [1, 2, 1, 3, 1, 4, 3, 5]
+# 원소의 갯수 세기
+print(testlist.count(1))
+print(testlist.count(3))
+print(testlist.count(5))
+print(testlist.count(-1))
+
+# 리스트의 확장
+testlist = [1, 2, 3]
+extlist = [4, 5]
+testlist.extend(extlist)
+print(testlist)
+
+testlist = [1, 2, 3]
+extlist = [4, 5]
+testlist += extlist   # testlist = testlist + extlist
+print(testlist)
+
+testlist = [1, 2, 3]
+testlist.extend([4, 5])
+print(testlist)
