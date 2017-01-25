@@ -34,3 +34,9 @@ print(s)
 # 특정 값 제거 하기
 s.remove(3)
 print(s)
+
+
+s = set([0, ])
+s.add('kim')
+
+print(s)

@@ -60,3 +60,9 @@ print('name' in dic)
 print('address' in dic)
 print(1 in nums)
 print(100 in nums)
+
+if dic: print("dictionary has elements")
+
+emptyDic = {}
+if emptyDic: print("is not Empty dictionary.")
+else: print("is empty dictionary.")
