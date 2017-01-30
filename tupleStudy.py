@@ -20,3 +20,4 @@ print(tstr.index("park"))       # 2 출력 (2번째 인덱스에 위치)
 print(tstr.count("lee"))        # `lee`라는 문자열이 2개 존재
 print(tstr[2:])                 # `park` 부터 마지막 원소 까지 출력
 
+print("%d" % len(tstr))
