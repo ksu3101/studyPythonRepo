@@ -35,3 +35,30 @@ while value != 0:
 	result = (result * 10) + (value % 10)
 	value //= 10
 print(result)
+
+print()
+
+# reverse string
+text = "abcdefg"
+print(text[::-1])
+
+listText = list(text)
+reversedText = ""
+i = len(text) - 1
+while i > -1:
+	reversedText += listText[i]
+	i -= 1
+print(reversedText)
+
+print()
+
+text = "MRL"
+listText = list(text)
+caesar = ""
+i = 0
+
+while i < len(text):
+	caesar += listText[i] + 3
+	i += 1
+print(caesar)
+
