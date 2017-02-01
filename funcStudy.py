@@ -1,5 +1,38 @@
 # function study
 
+def sum(*nums):
+	result = 0
+	for n in nums:
+		result += n
+	return result
+
+
+def minus(*nums):
+	result = 0
+	for n in nums:
+		result -= n
+	return result
+
+
+def divide(*nums):
+	result = 0
+	for n in nums:
+		result /= n
+	return result
+
+def multyply(*nums):
+	result = 0
+	for n in nums:
+		result *= n
+	return result
+
+print(sum(12, 34))
+print(minus(12, 34))
+print(divide(12, 34))
+print(multyply(12, 34))
+
+
+"""
 def sum(x, y):
 	return x + y
 
@@ -45,3 +78,5 @@ def sum(value, *nums):
 	for n in nums: sum += n
 	return sum
 print(sum(10000, 10, 20, 30, 40, 50))
+
+"""
