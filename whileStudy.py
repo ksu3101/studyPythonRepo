@@ -42,7 +42,7 @@ x = 1
 y = 1
 while x <= 9:
 	if y == 10: y = 0
-	while y <= 9:
+	while y <= 9:ssss
 		print("%d * %d = %d" % (x, y, x * y))
 		y += 1
 	x += 1
