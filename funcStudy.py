@@ -1,0 +1,47 @@
+# function study
+
+def sum(x, y):
+	return x + y
+
+print(sum(12, 34))
+print(sum(100, 300))
+
+print()
+
+def createHelloWorld():
+	return "HelloWorld"
+print(createHelloWorld())
+
+print()
+
+def printHelloWorld(prefix, postfix):
+	print(prefix + "Hello World" + postfix)
+printHelloWorld("<<<", ">>>")
+
+print()
+
+def printLoveYou():
+	print("I Love You")
+printLoveYou()
+
+print()
+
+def sumOfAllNumbers(a, b, c, d, e, f, g):
+	return a+b+c+d+e+f+g
+print(sumOfAllNumbers(1, 2, 3, 4, 5, 6, 7))
+
+print()
+
+def sumOfAllNumbers(*nums):
+	sum = 0
+	for n in nums: sum += n
+	return sum
+print(sumOfAllNumbers(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
+
+print()
+
+def sum(value, *nums):
+	sum = value
+	for n in nums: sum += n
+	return sum
+print(sum(10000, 10, 20, 30, 40, 50))
