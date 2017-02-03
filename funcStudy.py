@@ -1,5 +1,23 @@
 # function study
 
+v = 10
+def incrementValue(v):
+	v += 20
+
+incrementValue(v)
+print(v)
+
+print()
+
+def sumValue(x, y):
+	if x <= 0 or y <= 0: return None;
+	return x + y
+
+print(sumValue(10, 20))
+print(sumValue(0, 50))
+
+print()
+
 def sum(*nums):
 	result = 0
 	for n in nums:
@@ -31,8 +49,6 @@ print(minus(12, 34))
 print(divide(12, 34))
 print(multyply(12, 34))
 
-
-"""
 def sum(x, y):
 	return x + y
 
@@ -79,4 +95,3 @@ def sum(value, *nums):
 	return sum
 print(sum(10000, 10, 20, 30, 40, 50))
 
-"""
