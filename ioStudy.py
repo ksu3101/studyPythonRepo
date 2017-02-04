@@ -7,6 +7,12 @@ def isfloat(value):
 	except ValueError:
 		return False
 
+def isinteger(value):
+	try:
+		int(value)
+		return True
+	except ValueError:
+		return False
 
 inputs = input("input > ")
 print(inputs)
@@ -15,7 +21,7 @@ print()
 print(type(inputs))		# only String
 
 value = None
-if inputs.isnumeric():	# 101:true, -101:false, 10.30:false
+if isinteger(inputs):
 	value = int(inputs)
 elif isfloat(inputs):
 	value = float(inputs)
@@ -25,6 +31,3 @@ else:
 print()
 print(value)
 print("type of value is %s." % type(value))
-
-
-
