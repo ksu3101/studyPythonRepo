@@ -1,17 +1,15 @@
 # play ground py
 
-import sys
+print("안녕", "하세요.", "반갑 습니다.", "좋은 하루 되세요")
 
-a = 10
-b = 10
-c = "Hell Korea"
-d = "KangSungWoo"
-e = b
+for i in range(5):
+	print(i, end=" ")
 
-print(a is b)	# true
-print(a is c)	# false
-print(b is a)	# true
-print(c is d)	# false
-print(e is b)	# true
+for i in range(5):
+	print(i, end=" 인디언")
 
-print(sys.getrefcount(10))	# 35
+print()
+
+users = {"kim", "jung", "park", "lee"}
+for user in users:
+	print(user, end=", ")
