@@ -8,4 +8,3 @@ class RoundedRectangle(Rectangle):
 	def __init__(self, solidcolor, strokecolor, x, y, pathtype, pathcolor, radius):
 		super(self.__class__, self).__init__("RoundedRectangle", solidcolor, strokecolor, x, y, pathtype, pathcolor)
 		self.radius = radius
-
