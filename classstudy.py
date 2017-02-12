@@ -1,8 +1,8 @@
-import studyclasses.Shape
 from studyclasses.Rectangle import Rectangle
 from studyclasses.RoundedRectangle import RoundedRectangle
+from studyclasses.Shape import Shape
 
-shape = studyclasses.Shape.Shape("default shape", "white", "black", 120, 100)
+shape = Shape("default shape", "white", "black", 120, 100)
 
 print("%s type = %s" % (shape.type, shape.type))
 print("%s SolidColor = %s" % (shape.type, shape.solidColor))
