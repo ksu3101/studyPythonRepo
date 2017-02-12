@@ -26,9 +26,45 @@ class Calculator:
 	def multiply(self):
 		return self.x * self.y
 
+	def __add__(self, other):
+		return self.add(self) + other.add()
+
+
+class ScientificCalculator(Calculator):
+
+	z = 0
+
+	def __init__(self, x, y, z):
+		Calculator.__init__(self, x, y)
+		self.z = z
+
+	def add(self):
+		return Calculator.add(self) + self.z
+
+	def mod(self):
+		return self.x % self.y
+
+	def squarex(self):
+		return self.x ** 2
+
+	def square(self):
+		return self.x ** self.y
+
 
 calc = Calculator(21, 3)
 print("%d + %d = %d" % (calc.x, calc.y, calc.add()))
 print("%d - %d = %d" % (calc.x, calc.y, calc.minus()))
 print("%d / %d = %d" % (calc.x, calc.y, calc.divide()))
 print("%d * %d = %d" % (calc.x, calc.y, calc.multiply()))
+
+calc2 = Calculator(6, 9)
+print("calc2 = %d" % (calc + calc2))
+
+print()
+
+sincalc = ScientificCalculator(14, 3, 12)
+print("%d + %d + %d = %d" % (sincalc.x, sincalc.y, sincalc.z, sincalc.add()))
+print("%d mod %d = %d" % (sincalc.x, sincalc.y, sincalc.mod()))
+print("%d square %d = %d" % (sincalc.x, sincalc.y, sincalc.square()))
+print("%d square 2 = %d" % (sincalc.x, sincalc.squarex()))
+

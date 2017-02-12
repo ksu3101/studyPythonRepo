@@ -19,3 +19,6 @@ class Shape:
 	def setSize(self, width, height):
 		self.width = width
 		self.height = height
+
+	def drawShape(self):
+		print("%s : %d, %d, size is (%d, %d)" % (type, self.x, self.y, self.width, self.height))
