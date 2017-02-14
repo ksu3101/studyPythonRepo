@@ -21,4 +21,7 @@ class Shape:
 		self.height = height
 
 	def drawShape(self):
-		print("%s : %d, %d, size is (%d, %d)" % (type, self.x, self.y, self.width, self.height))
+		print(self.__str__())
+
+	def __str__(self):
+		return format("%s : x(%d), y(%d), size is (%d, %d)" % (self.type, self.x, self.y, self.width, self.height))
