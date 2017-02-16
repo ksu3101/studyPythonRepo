@@ -17,6 +17,7 @@ try:
 except ZeroDivisionError as error:
 	print(error)
 
+
 else:
 	print("정상적인 케이스 입니다.")
 
