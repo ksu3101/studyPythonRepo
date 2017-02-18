@@ -8,6 +8,14 @@ class MyException(Exception):
 	def __str__(self):
 		return self.errorMsg
 
+class MyException2(Exception):
+	msg = ""
+
+	def __init__(self, msg):
+		self.msg = msg
+
+	def __str__(self):
+		return self.msg
 
 num = 23
 
